@@ -9,26 +9,26 @@ Passionné de jeux vidéo et de nouvelles technologies depuis mes 7 ans, je souh
 
 # Scolarité
 
-### [Depuis 2023] Collège 
+## [Depuis 2023] Collège 
 Actuellement en 3e, avec anglais, espagnol et latin
 
 ---
 
 # Projets
 
-### [2025-2026] Création d’un jeu en Python
+## [2025-2026] Création d’un jeu en Python
 Dans le cadre d’un atelier périscolaire
 
-### [Depuis 09-2023] Découverte autonome de Python
+## [Depuis 09-2023] Découverte autonome de Python
 Avec un livre (de 7 à 77 ans) et des exercices avec ChatGPT
 
-### [04-2023] Séjour de robotique (Telligo)
+## [04-2023] Séjour de robotique (Telligo)
 Une semaine de découverte de l’électronique avec soudure d’un robot en kit
 
-### [07-2020] Atelier "Coder dans Minecraft" (Magic Makers)
+## [07-2020] Atelier "Coder dans Minecraft" (Magic Makers)
 Une semaine pour apprendre le code dans le jeu
 
-### [04-2020] Atelier "Crée tes animations sur Scratch" (Magic Makers)
+## [04-2020] Atelier "Crée tes animations sur Scratch" (Magic Makers)
 Une semaine pour découvrir le logiciel Scratch
 
 ---
