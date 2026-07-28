@@ -3,7 +3,6 @@
 *Passionné de jeux vidéo et de nouvelles technologies depuis mes 7 ans, je souhaite faire un stage d’une semaine dans la cybersécurité. Ce stage serait une super occasion pour moi de découvrir ce métier et de voir si c’est vraiment ce que je veux faire plus tard. Je suis motivé, curieux, et prêt à apprendre tout ce que je peux pour mieux comprendre ce domaine.
 
 **Je me suis préparé à ce stage en passant le badge "Introduction à la Cybersécurité" de la Cisco Network Academy.**
-> https://www.credly.com/users/victor-aufauvre-rabiller/badges/credly
 
 ### Scolarité
 **[Depuis 2023] Collège.** En 3e à la rentrée de septembre 2026, avec anglais et espagnol (commencés en 6e).
