@@ -136,6 +136,7 @@
     }
 
     .hero::after {
+      display:none;
       position: absolute;
       right: -140px;
       bottom: -180px;
@@ -233,23 +234,59 @@
     .profile-card {
       position: relative;
       z-index: 1;
-      align-self: center;
-      display: grid;
-      place-items: center;
-      min-height: 0;
-      padding: 18px;
-      border: 1px solid rgba(255,255,255,.1);
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 100%;
+      padding: 24px;
+      border: 0;
       border-radius: var(--radius-md);
-      background: rgba(5, 15, 27, 0.42);
+      background: transparent;
     }
 
 
+    .profile-card dl {
+      display: grid;
+      gap: 15px;
+      margin: 0;
+    }
+
+    .profile-card dt {
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 750;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .profile-card dd {
+      margin: 0;
+      font-weight: 700;
+    }
 
     .credly-badge {
       display: grid;
-      place-items: center;
-      width: 100%;
-      min-width: 0;
+      justify-items: center;
+      gap: 8px;
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .credly-badge strong {
+      font-size: 0.84rem;
+      line-height: 1.3;
+      font-weight: 700;
+    }
+
+    .credly-badge p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.76rem;
+      line-height: 1.4;
     }
 
     .credly-embed {
@@ -595,8 +632,11 @@
       }
 
       .profile-card {
-        width: min(100%, 220px);
-        margin: 0 auto;
+        display: block;
+      }
+
+      .credly-badge {
+        margin-top: 22px;
       }
     }
 
@@ -719,6 +759,11 @@
       }
 
 
+      .credly-badge {
+        margin-top: 10px;
+        padding-top: 10px;
+      }
+
       .credly-embed {
         min-height: 235px;
         transform: scale(0.88);
@@ -815,7 +860,9 @@
       </div>
 
       <aside class="profile-card" aria-label="Informations principales">
-       <div class="credly-badge" aria-label="Badge Cisco Networking Academy : Introduction à la cybersécurité">
+       <div class="credly-badge">
+          <strong>Badge Cisco Net Academy</strong>
+          <p>Introduction à la cybersécurité</p>
           <div class="credly-embed"
                data-iframe-width="150"
                data-iframe-height="270"
@@ -957,7 +1004,7 @@
               <h3>Collège — classe de 3e en 2026–2027</h3>
               <p>
                 Enseignement général avec apprentissage de l’anglais et de
-                l’espagnol. Prise de notes et organisation des cours sur iPad
+                l’espagnol. <p>Prise de notes et organisation des cours sur iPad
                 et ordinateur.
               </p>
             </article>
