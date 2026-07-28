@@ -123,7 +123,7 @@
       position: relative;
       overflow: hidden;
       display: grid;
-      grid-template-columns: minmax(0, 1.65fr) minmax(260px, 0.75fr);
+      grid-template-columns: minmax(0, 1.8fr) minmax(235px, 0.62fr);
       gap: 32px;
       padding: clamp(30px, 5vw, 64px);
       border: 1px solid var(--line);
@@ -236,7 +236,7 @@
       align-self: stretch;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       min-height: 100%;
       padding: 24px;
       border: 1px solid rgba(255,255,255,.1);
@@ -244,22 +244,6 @@
       background: rgba(5, 15, 27, 0.56);
     }
 
-    .avatar {
-      display: grid;
-      width: 94px;
-      height: 94px;
-      place-items: center;
-      margin-bottom: 34px;
-      border: 1px solid rgba(88, 224, 189, 0.3);
-      border-radius: 26px;
-      color: var(--accent);
-      background:
-        linear-gradient(135deg, rgba(88, 224, 189, 0.14), rgba(122, 167, 255, 0.12));
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 2.3rem;
-      font-weight: 850;
-      letter-spacing: -0.08em;
-    }
 
     .profile-card dl {
       display: grid;
@@ -281,41 +265,34 @@
       font-weight: 700;
     }
 
-    .badge {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      margin-top: 26px;
-      padding: 14px;
+    .credly-badge {
+      display: grid;
+      justify-items: center;
+      gap: 10px;
+      margin-top: 24px;
+      padding: 16px 10px 10px;
       border: 1px solid rgba(88, 224, 189, 0.2);
       border-radius: var(--radius-sm);
       background: rgba(88, 224, 189, 0.075);
+      text-align: center;
     }
 
-    .badge-icon {
-      flex: 0 0 auto;
-      display: grid;
-      width: 34px;
-      height: 34px;
-      place-items: center;
-      border-radius: 50%;
-      color: var(--accent);
-      background: rgba(88, 224, 189, 0.12);
-      font-weight: 900;
-    }
-
-    .badge strong {
-      display: block;
+    .credly-badge strong {
       font-size: 0.9rem;
-      line-height: 1.25;
+      line-height: 1.3;
     }
 
-    .badge span {
-      display: block;
-      margin-top: 4px;
+    .credly-badge p {
+      margin: 0;
       color: var(--muted);
-      font-size: 0.8rem;
-      line-height: 1.35;
+      font-size: 0.78rem;
+      line-height: 1.4;
+    }
+
+    .credly-embed {
+      width: 150px;
+      max-width: 100%;
+      min-height: 270px;
     }
 
     .layout {
@@ -538,6 +515,58 @@
       font-size: 0.9rem;
     }
 
+
+    .quality {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .quality-icon,
+    .interest-icon {
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      color: var(--accent);
+      border: 1px solid rgba(88, 224, 189, 0.22);
+      background: rgba(88, 224, 189, 0.075);
+    }
+
+    .quality-icon {
+      width: 38px;
+      height: 38px;
+      margin-bottom: 12px;
+      border-radius: 12px;
+    }
+
+    .interest-heading {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .interest-heading strong {
+      margin: 0;
+    }
+
+    .interest-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 11px;
+    }
+
+    .quality-icon svg,
+    .interest-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
     .contact-card {
       background:
         linear-gradient(145deg, rgba(88, 224, 189, 0.1), rgba(122, 167, 255, 0.06)),
@@ -609,19 +638,11 @@
       }
 
       .profile-card {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        align-items: start;
-        gap: 22px;
+        display: block;
       }
 
-      .avatar {
-        margin: 0;
-      }
-
-      .badge {
-        grid-column: 1 / -1;
-        margin-top: 0;
+      .credly-badge {
+        margin-top: 22px;
       }
     }
 
@@ -645,10 +666,6 @@
 
       h1 {
         font-size: clamp(3rem, 20vw, 5rem);
-      }
-
-      .profile-card {
-        grid-template-columns: 1fr;
       }
 
       .skills,
@@ -748,17 +765,17 @@
         padding: 15px;
       }
 
-      .avatar {
-        width: 62px;
-        height: 62px;
-        margin-bottom: 16px;
-        border-radius: 18px;
-        font-size: 1.45rem;
+
+      .credly-badge {
+        margin-top: 12px;
+        padding: 8px;
       }
 
-      .badge {
-        margin-top: 14px;
-        padding: 9px;
+      .credly-embed {
+        min-height: 235px;
+        transform: scale(0.88);
+        transform-origin: top center;
+        margin-bottom: -28px;
       }
 
       .layout {
@@ -861,7 +878,6 @@
 
       <aside class="profile-card" aria-label="Informations principales">
         <div>
-          <div class="avatar" aria-hidden="true">VA</div>
 
           <dl>
             <div>
@@ -879,12 +895,14 @@
           </dl>
         </div>
 
-        <div class="badge">
-          <span class="badge-icon" aria-hidden="true">✓</span>
-          <div>
-            <strong>Introduction à la cybersécurité</strong>
-            <span>Badge obtenu auprès de Cisco Networking Academy</span>
-          </div>
+        <div class="credly-badge">
+          <strong>Badge Cisco Networking Academy</strong>
+          <p>Introduction à la cybersécurité</p>
+          <div class="credly-embed"
+               data-iframe-width="150"
+               data-iframe-height="270"
+               data-share-badge-id="2045f93e-7535-4d20-bba3-0711c5a60809"
+               data-share-badge-host="https://www.credly.com"></div>
         </div>
       </aside>
     </section>
@@ -906,7 +924,7 @@
                 périscolaire : logique du jeu, premiers scripts et résolution
                 progressive des erreurs.
               </p>
-              <a class="project-link" href="https://github.com/VOTRE-PSEUDO" target="_blank" rel="noreferrer">
+              <a class="project-link" href="https://github.com/Victor-A-R" target="_blank" rel="noreferrer">
                 Consulter le projet sur GitHub →
               </a>
             </article>
@@ -1038,15 +1056,52 @@
 
           <div class="qualities">
             <div class="quality">
+              <span class="quality-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <path d="m20 20-4-4"></path>
+                  <path d="M8.5 11h5"></path>
+                  <path d="M11 8.5v5"></path>
+                </svg>
+              </span>
               <strong>Curieux</strong>
             </div>
+
             <div class="quality">
+              <span class="quality-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 3v4"></path>
+                  <path d="m5.6 5.6 2.8 2.8"></path>
+                  <path d="M3 12h4"></path>
+                  <path d="m5.6 18.4 2.8-2.8"></path>
+                  <path d="M12 17v4"></path>
+                  <path d="m18.4 18.4-2.8-2.8"></path>
+                  <path d="M17 12h4"></path>
+                  <path d="m18.4 5.6-2.8 2.8"></path>
+                  <circle cx="12" cy="12" r="3.2"></circle>
+                </svg>
+              </span>
               <strong>Motivé</strong>
             </div>
+
             <div class="quality">
+              <span class="quality-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 21a9 9 0 1 0-9-9"></path>
+                  <path d="M3 4v6h6"></path>
+                  <path d="m8.5 12 2.2 2.2L16 9"></path>
+                </svg>
+              </span>
               <strong>Persévérant</strong>
             </div>
+
             <div class="quality">
+              <span class="quality-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v17H6.5A2.5 2.5 0 0 0 4 22z"></path>
+                  <path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H13v17h4.5A2.5 2.5 0 0 1 20 22z"></path>
+                </svg>
+              </span>
               <strong>Prêt à apprendre</strong>
             </div>
           </div>
@@ -1089,7 +1144,18 @@
 
           <ul class="interest-list">
             <li>
-              <strong>Jeux vidéo</strong>
+              <div class="interest-heading">
+                <span class="interest-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 8h8a5 5 0 0 1 4.8 6.4l-1 3.3a2.2 2.2 0 0 1-3.7.9L14.5 17h-5l-1.6 1.6a2.2 2.2 0 0 1-3.7-.9l-1-3.3A5 5 0 0 1 8 8z"></path>
+                    <path d="M8 12v4"></path>
+                    <path d="M6 14h4"></path>
+                    <circle cx="16.5" cy="13" r=".7" fill="currentColor" stroke="none"></circle>
+                    <circle cx="18.5" cy="15" r=".7" fill="currentColor" stroke="none"></circle>
+                  </svg>
+                </span>
+                <strong>Jeux vidéo</strong>
+              </div>
               <p>
                 Jeux compétitifs, tactiques et narratifs sur PlayStation 5 et
                 Nintendo Switch.
@@ -1105,12 +1171,32 @@
             </li>
 
             <li>
-              <strong>Breakdance</strong>
+              <div class="interest-heading">
+                <span class="interest-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="14" cy="4.5" r="2"></circle>
+                    <path d="m13 7-3 4 3 2 2-3 3 2"></path>
+                    <path d="m10 11-4 1-2 4"></path>
+                    <path d="m13 13-2 4-4 3"></path>
+                    <path d="m15 10 2-2 3 1"></path>
+                  </svg>
+                </span>
+                <strong>Breakdance</strong>
+              </div>
               <p>Pratique en club depuis 2020.</p>
             </li>
 
             <li>
-              <strong>Secourisme</strong>
+              <div class="interest-heading">
+                <span class="interest-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 21s-7-4.4-7-10.2A4.3 4.3 0 0 1 12 7.5a4.3 4.3 0 0 1 7 3.3C19 16.6 12 21 12 21z"></path>
+                    <path d="M12 9v5"></path>
+                    <path d="M9.5 11.5h5"></path>
+                  </svg>
+                </span>
+                <strong>Secourisme</strong>
+              </div>
               <p>Formation Prévention et secours civiques de niveau 1 — PSC1.</p>
             </li>
           </ul>
@@ -1123,5 +1209,6 @@
      
     </footer>
   </main>
+  <script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
 </body>
 </html>
