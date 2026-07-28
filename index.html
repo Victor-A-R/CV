@@ -268,24 +268,23 @@
     .credly-badge {
       display: grid;
       justify-items: center;
-      gap: 10px;
-      margin-top: 24px;
-      padding: 16px 10px 10px;
-      border: 1px solid rgba(88, 224, 189, 0.2);
-      border-radius: var(--radius-sm);
-      background: rgba(88, 224, 189, 0.075);
+      gap: 8px;
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
       text-align: center;
     }
 
     .credly-badge strong {
-      font-size: 0.9rem;
+      font-size: 0.84rem;
       line-height: 1.3;
+      font-weight: 700;
     }
 
     .credly-badge p {
       margin: 0;
       color: var(--muted);
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       line-height: 1.4;
     }
 
@@ -491,36 +490,30 @@
 
     .qualities {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+      gap: 4px;
     }
-
-    .quality {
-      min-height: 88px;
-      padding: 15px;
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: var(--radius-sm);
-      background: rgba(255,255,255,.025);
-    }
-
-    .quality span {
-      display: block;
-      margin-bottom: 8px;
-      color: var(--accent);
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 0.8rem;
-    }
-
-    .quality strong {
-      font-size: 0.9rem;
-    }
-
 
     .quality {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      min-height: 0;
+      padding: 10px 0;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      border-radius: 0;
+      background: transparent;
     }
+
+    .quality:last-child {
+      border-bottom: 0;
+    }
+
+    .quality strong {
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+
 
     .quality-icon,
     .interest-icon {
@@ -533,10 +526,10 @@
     }
 
     .quality-icon {
-      width: 38px;
-      height: 38px;
-      margin-bottom: 12px;
-      border-radius: 12px;
+      width: 36px;
+      height: 36px;
+      margin: 0;
+      border-radius: 11px;
     }
 
     .interest-heading {
@@ -668,8 +661,7 @@
         font-size: clamp(3rem, 20vw, 5rem);
       }
 
-      .skills,
-      .qualities {
+      .skills {
         grid-template-columns: 1fr;
       }
 
@@ -767,8 +759,8 @@
 
 
       .credly-badge {
-        margin-top: 12px;
-        padding: 8px;
+        margin-top: 10px;
+        padding-top: 10px;
       }
 
       .credly-embed {
