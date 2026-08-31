@@ -123,7 +123,7 @@
       position: relative;
       overflow: hidden;
       display: grid;
-      grid-template-columns: minmax(0, 1.8fr) minmax(235px, 0.62fr);
+      grid-template-columns: 1fr;
       gap: 32px;
       padding: clamp(30px, 5vw, 64px);
       border: 1px solid var(--line);
@@ -231,68 +231,27 @@
       background: #78f3d3;
     }
 
-    .profile-card {
-      position: relative;
-      z-index: 1;
-      align-self: stretch;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      min-height: 100%;
-      padding: 24px;
-      border: 0;
-      border-radius: var(--radius-md);
-      background: transparent;
-    }
-
-
-    .profile-card dl {
-      display: grid;
-      gap: 15px;
-      margin: 0;
-    }
-
-    .profile-card dt {
-      margin-bottom: 2px;
-      color: var(--muted);
-      font-size: 0.76rem;
-      font-weight: 750;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
-    .profile-card dd {
-      margin: 0;
-      font-weight: 700;
-    }
-
-    .credly-badges {
-      margin-top: 22px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
-      text-align: center;
-    }
-
-    .credly-badges-label {
-      margin: 0 0 10px;
-      color: var(--muted);
-      font-size: 0.7rem;
-      font-weight: 750;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-
-    .credly-badges-row {
-      display: flex;
+    .badge-link {
+      display: inline-flex;
+      align-items: center;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: 180ms ease;
     }
 
-    .credly-embed-sm {
-      width: 110px;
-      max-width: 100%;
-      min-height: 150px;
+    .badge-link img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .badge-link:hover,
+    .badge-link:focus-visible {
+      transform: translateY(-2px);
     }
 
     .layout {
@@ -626,17 +585,8 @@
     }
 
     @media (max-width: 880px) {
-      .hero,
       .layout {
         grid-template-columns: 1fr;
-      }
-
-      .profile-card {
-        display: block;
-      }
-
-      .credly-badges {
-        margin-top: 22px;
       }
     }
 
@@ -722,7 +672,7 @@
       }
 
       .hero {
-        grid-template-columns: 1.55fr 0.8fr;
+        grid-template-columns: 1fr;
         gap: 16px;
         padding: 20px;
         box-shadow: none;
@@ -743,31 +693,19 @@
         font-size: 9pt;
       }
 
-      .hero-actions {
+      .hero-actions .button {
         display: none;
       }
 
-      .profile-card,
+      .badge-link {
+        width: 40px;
+        height: 40px;
+      }
+
       .section {
         box-shadow: none;
         backdrop-filter: none;
         break-inside: avoid;
-      }
-
-      .profile-card {
-        padding: 15px;
-      }
-
-
-      .credly-badges {
-        margin-top: 10px;
-        padding-top: 10px;
-      }
-
-      .credly-embed-sm {
-        min-height: 130px;
-        transform: scale(0.9);
-        transform-origin: top center;
       }
 
       .layout {
@@ -855,28 +793,15 @@
           <a class="button" href="https://github.com/Victor-A-R" target="_blank" rel="noreferrer">
             Voir mon GitHub
           </a>
+
+          <a class="badge-link" href="https://www.credly.com/badges/2045f93e-7535-4d20-bba3-0711c5a60809" target="_blank" rel="noreferrer" aria-label="Badge Cisco Networking Academy — Introduction to Cybersecurity (vérifier sur Credly)">
+            <img src="Cybersecurity.png" alt="Badge Cisco Networking Academy — Introduction to Cybersecurity">
+          </a>
+          <a class="badge-link" href="https://www.credly.com/badges/c5504c43-f0f0-4188-9259-12a8bc2207b5" target="_blank" rel="noreferrer" aria-label="Badge Cisco Networking Academy — Computer Hardware Basics (vérifier sur Credly)">
+            <img src="Hardware.png" alt="Badge Cisco Networking Academy — Computer Hardware Basics">
+          </a>
         </div>
       </div>
-
-      <aside class="profile-card" aria-label="Informations principales">
-        <div class="credly-badges">
-          <p class="credly-badges-label">Badges Cisco Net Academy</p>
-          <div class="credly-badges-row">
-            <div class="credly-embed-sm"
-                 data-iframe-width="110"
-                 data-iframe-height="150"
-                 data-share-badge-id="2045f93e-7535-4d20-bba3-0711c5a60809"
-                 data-share-badge-host="https://www.credly.com"
-                 title="Introduction à la cybersécurité"></div>
-            <div class="credly-embed-sm"
-                 data-iframe-width="110"
-                 data-iframe-height="150"
-                 data-share-badge-id="c5504c43-f0f0-4188-9259-12a8bc2207b5"
-                 data-share-badge-host="https://www.credly.com"
-                 title="Notions de base en matériel informatique"></div>
-          </div>
-        </div>
-      </aside>
     </section>
 
     <div class="layout">
@@ -1197,6 +1122,5 @@
      
     </footer>
   </main>
-  <script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
 </body>
 </html>
