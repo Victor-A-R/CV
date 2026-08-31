@@ -165,9 +165,9 @@
     h1 {
       max-width: 760px;
       margin: 0;
-      font-size: clamp(3.2rem, 9vw, 7rem);
-      line-height: 0.9;
-      letter-spacing: -0.065em;
+      font-size: clamp(2.1rem, 4vw, 3.4rem);
+      line-height: 1;
+      letter-spacing: -0.045em;
     }
 
     .hero h2 {
@@ -231,13 +231,19 @@
       background: #78f3d3;
     }
 
+    .badges-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
     .badge-link {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
+      width: 84px;
+      height: 84px;
+      border-radius: 16px;
       overflow: hidden;
       transition: 180ms ease;
     }
@@ -609,7 +615,7 @@
       }
 
       h1 {
-        font-size: clamp(3rem, 20vw, 5rem);
+        font-size: clamp(2rem, 11vw, 2.8rem);
       }
 
       .skills {
@@ -680,7 +686,7 @@
       }
 
       h1 {
-        font-size: 42pt;
+        font-size: 24pt;
       }
 
       .hero h2 {
@@ -693,13 +699,13 @@
         font-size: 9pt;
       }
 
-      .hero-actions .button {
+      .hero-actions {
         display: none;
       }
 
       .badge-link {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
       }
 
       .section {
@@ -792,13 +798,6 @@
           </a>
           <a class="button" href="https://github.com/Victor-A-R" target="_blank" rel="noreferrer">
             Voir mon GitHub
-          </a>
-
-          <a class="badge-link" href="https://www.credly.com/badges/2045f93e-7535-4d20-bba3-0711c5a60809" target="_blank" rel="noreferrer" aria-label="Badge Cisco Networking Academy — Introduction to Cybersecurity (vérifier sur Credly)">
-            <img src="Cybersecurity.png" alt="Badge Cisco Networking Academy — Introduction to Cybersecurity">
-          </a>
-          <a class="badge-link" href="https://www.credly.com/badges/c5504c43-f0f0-4188-9259-12a8bc2207b5" target="_blank" rel="noreferrer" aria-label="Badge Cisco Networking Academy — Computer Hardware Basics (vérifier sur Credly)">
-            <img src="Hardware.png" alt="Badge Cisco Networking Academy — Computer Hardware Basics">
           </a>
         </div>
       </div>
@@ -955,11 +954,25 @@
       </div>
 
       <aside class="column">
-       
+        <section class="section" aria-labelledby="badges-title">
+          <h2 class="section-title" id="badges-title">
+            <span class="section-number">04</span>
+            Badges Cisco
+          </h2>
+
+          <div class="badges-row">
+            <a class="badge-link" href="https://www.credly.com/badges/2045f93e-7535-4d20-bba3-0711c5a60809" target="_blank" rel="noreferrer" aria-label="Badge Cisco Networking Academy — Introduction to Cybersecurity (vérifier sur Credly)">
+              <img src="Cybersecurity.png" alt="Badge Cisco Networking Academy — Introduction to Cybersecurity">
+            </a>
+            <a class="badge-link" href="https://www.credly.com/badges/c5504c43-f0f0-4188-9259-12a8bc2207b5" target="_blank" rel="noreferrer" aria-label="Badge Cisco Networking Academy — Computer Hardware Basics (vérifier sur Credly)">
+              <img src="Hardware.png" alt="Badge Cisco Networking Academy — Computer Hardware Basics">
+            </a>
+          </div>
+        </section>
 
 <section class="section" aria-labelledby="languages-title">
           <h2 class="section-title" id="languages-title">
-            <span class="section-number">04</span>
+            <span class="section-number">05</span>
             Langues
           </h2>
 
@@ -990,7 +1003,7 @@
           
 
 <h2 class="section-title" id="qualities-title">
-            <span class="section-number">05</span>
+            <span class="section-number">06</span>
             Mes qualités
           </h2>
 
@@ -1051,7 +1064,7 @@
 
         <section class="section" aria-labelledby="interests-title">
           <h2 class="section-title" id="interests-title">
-            <span class="section-number">06</span>
+            <span class="section-number">07</span>
             Centres d’intérêt
           </h2>
 
