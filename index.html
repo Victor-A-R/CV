@@ -266,33 +266,33 @@
       font-weight: 700;
     }
 
-    .credly-badge {
-      display: grid;
-      justify-items: center;
-      gap: 8px;
+    .credly-badges {
       margin-top: 22px;
       padding-top: 18px;
       border-top: 1px solid var(--line);
       text-align: center;
     }
 
-    .credly-badge strong {
-      font-size: 0.84rem;
-      line-height: 1.3;
-      font-weight: 700;
-    }
-
-    .credly-badge p {
-      margin: 0;
+    .credly-badges-label {
+      margin: 0 0 10px;
       color: var(--muted);
-      font-size: 0.76rem;
-      line-height: 1.4;
+      font-size: 0.7rem;
+      font-weight: 750;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
     }
 
-    .credly-embed {
-      width: 150px;
+    .credly-badges-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .credly-embed-sm {
+      width: 110px;
       max-width: 100%;
-      min-height: 270px;
+      min-height: 150px;
     }
 
     .layout {
@@ -635,7 +635,7 @@
         display: block;
       }
 
-      .credly-badge {
+      .credly-badges {
         margin-top: 22px;
       }
     }
@@ -759,16 +759,15 @@
       }
 
 
-      .credly-badge {
+      .credly-badges {
         margin-top: 10px;
         padding-top: 10px;
       }
 
-      .credly-embed {
-        min-height: 235px;
-        transform: scale(0.88);
+      .credly-embed-sm {
+        min-height: 130px;
+        transform: scale(0.9);
         transform-origin: top center;
-        margin-bottom: -28px;
       }
 
       .layout {
@@ -860,27 +859,63 @@
       </div>
 
       <aside class="profile-card" aria-label="Informations principales">
-       <div class="credly-badge">
-          <strong>Badge Cisco Net Academy</strong>
-          <p>Introduction à la cybersécurité</p>
-          <div class="credly-embed"
-               data-iframe-width="150"
-               data-iframe-height="270"
-               data-share-badge-id="2045f93e-7535-4d20-bba3-0711c5a60809"
-               data-share-badge-host="https://www.credly.com"></div>
+        <div class="credly-badges">
+          <p class="credly-badges-label">Badges Cisco Net Academy</p>
+          <div class="credly-badges-row">
+            <div class="credly-embed-sm"
+                 data-iframe-width="110"
+                 data-iframe-height="150"
+                 data-share-badge-id="2045f93e-7535-4d20-bba3-0711c5a60809"
+                 data-share-badge-host="https://www.credly.com"
+                 title="Introduction à la cybersécurité"></div>
+            <div class="credly-embed-sm"
+                 data-iframe-width="110"
+                 data-iframe-height="150"
+                 data-share-badge-id="c5504c43-f0f0-4188-9259-12a8bc2207b5"
+                 data-share-badge-host="https://www.credly.com"
+                 title="Notions de base en matériel informatique"></div>
+          </div>
         </div>
       </aside>
     </section>
 
     <div class="layout">
       <div class="column">
+        <section class="section" aria-labelledby="school-title">
+          <h2 class="section-title" id="school-title">
+            <span class="section-number">01</span>
+            Scolarité
+          </h2>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <p class="timeline-date">RENTRÉE 2026</p>
+              <h3>Collège — classe de 3e en 2026–2027</h3>
+              <p>
+                Enseignement général avec apprentissage de l’anglais et de
+                l’espagnol. <p>Prise de notes et organisation des cours sur iPad
+                et ordinateur.
+              </p>
+            </article>
+          </div>
+        </section>
+
         <section class="section" aria-labelledby="projects-title">
           <h2 class="section-title" id="projects-title">
-            <span class="section-number">01</span>
+            <span class="section-number">02</span>
             Projets et premières expériences
           </h2>
 
           <div class="timeline">
+            <article class="timeline-item">
+              <p class="timeline-date">RENTRÉE 2026</p>
+              <h3>Données et algorithmes avec Python</h3>
+              <p>
+                Deuxième année d’atelier périscolaire pour continuer mon
+                apprentissage de Python.
+              </p>
+            </article>
+
             <article class="timeline-item">
               <p class="timeline-date">2025 — 2026</p>
               <h3>Création d’un jeu en Python</h3>
@@ -925,7 +960,7 @@
 
         <section class="section" aria-labelledby="skills-title">
           <h2 class="section-title" id="skills-title">
-            <span class="section-number">02</span>
+            <span class="section-number">03</span>
             Compétences numériques
           </h2>
 
@@ -966,7 +1001,7 @@
                 <span>Débutant</span>
               </div>
               <div class="meter" aria-hidden="true">
-                <i style="--level: 34%"></i>
+                <i style="--level: 25%"></i>
               </div>
             </div>
 
@@ -976,7 +1011,7 @@
                 <span>Exploration</span>
               </div>
               <div class="meter" aria-hidden="true">
-                <i style="--level: 48%"></i>
+                <i style="--level: 25%"></i>
               </div>
             </div>
 
@@ -986,30 +1021,12 @@
                 <span>Premières bases</span>
               </div>
               <div class="meter" aria-hidden="true">
-                <i style="--level: 38%"></i>
+                <i style="--level: 25%"></i>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="section" aria-labelledby="school-title">
-          <h2 class="section-title" id="school-title">
-            <span class="section-number">03</span>
-            Scolarité
-          </h2>
-
-          <div class="timeline">
-            <article class="timeline-item">
-              <p class="timeline-date">DEPUIS 2023</p>
-              <h3>Collège — classe de 3e en 2026–2027</h3>
-              <p>
-                Enseignement général avec apprentissage de l’anglais et de
-                l’espagnol. <p>Prise de notes et organisation des cours sur iPad
-                et ordinateur.
-              </p>
-            </article>
-          </div>
-        </section>
       </div>
 
       <aside class="column">
@@ -1176,7 +1193,7 @@
     </div>
 
     <footer>
-      <span>CV en ligne de Victor AR · Dernière mise à jour : 28 Juillet 2026</span>
+      <span>CV en ligne de Victor AR · Dernière mise à jour : 31 Août 2026</span>
      
     </footer>
   </main>
