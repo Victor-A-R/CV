@@ -5,9 +5,10 @@
 **Je me suis préparé à ce stage en passant le badge "Introduction à la Cybersécurité" de la Cisco Network Academy.**
 
 ### Scolarité
-**[Depuis 2023] Collège.** En 3e à la rentrée de septembre 2026, avec anglais et espagnol (commencés en 6e).
+**[Rentrée 2026].** Classe de 3e, avec anglais et espagnol (commencés en 6e).
 
 ### Projets
+**[2026-2027] Données et algorithmes en Python.** Dans le cadre d’un atelier périscolaire.  
 **[2025-2026] Création d’un jeu en Python.** Dans le cadre d’un atelier périscolaire (dispo sur ce Git).  
 **[04-2023] Séjour de robotique.** Une semaine de découverte de l’électronique avec soudure d’un robot en kit.  
 **[07-2020] Atelier "Coder dans Minecraft".** Une semaine pour apprendre le code dans la plateforme.  
