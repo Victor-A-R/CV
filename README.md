@@ -1,6 +1,6 @@
 # Victor AR  
 ### Cherche un stage de 3e dans la cybersécurité du 1er au 5 février 2017
-*Passionné de jeux vidéo et de nouvelles technologies depuis mes 7 ans, je souhaite faire un stage d’une semaine dans la cybersécurité. Ce stage serait une super occasion pour moi de découvrir ce métier et de voir si c’est vraiment ce que je veux faire plus tard. Je suis motivé, curieux, et prêt à apprendre tout ce que je peux pour mieux comprendre ce domaine.
+Passionné de jeux vidéo et de nouvelles technologies depuis l’enfance, je souhaite découvrir les métiers de la cybersécurité, de la programmation ou de l'électronique au contact de professionnels. Cette semaine de stage serait pour moi l’occasion de comprendre leur quotidien, d’observer leurs méthodes de travail et de construire mon projet d’orientation.
 
 **Je me suis préparé à ce stage en passant le badge "Introduction à la Cybersécurité" de la Cisco Network Academy.**
 
