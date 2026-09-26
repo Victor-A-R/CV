@@ -2,7 +2,7 @@
 ### Cherche un stage de 3e dans la cybersécurité du 1er au 5 février 2017
 Passionné de jeux vidéo et de nouvelles technologies depuis l’enfance, je souhaite découvrir les métiers de la cybersécurité, de la programmation ou de l'électronique au contact de professionnels. Cette semaine de stage serait pour moi l’occasion de comprendre leur quotidien, d’observer leurs méthodes de travail et de construire mon projet d’orientation.
 
-**Je me suis préparé à ce stage en passant le badge "Introduction à la Cybersécurité" de la Cisco Network Academy.**
+**Je me suis préparé à ce stage en passant les badges "Introduction à la Cybersécurité" et "Computer Hardware Basics" de la Cisco Network Academy.**
 
 ### Scolarité
 **[Rentrée 2026].** Classe de 3e, avec anglais et espagnol (commencés en 6e).
