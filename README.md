@@ -5,7 +5,8 @@ Passionné de jeux vidéo et de nouvelles technologies depuis l’enfance, je so
 **Je me suis préparé à ce stage en passant les badges "Introduction à la Cybersécurité" et "Computer Hardware Basics" de la Cisco Network Academy.**
 
 ### Scolarité
-**[Rentrée 2026].** Classe de 3e, avec anglais et espagnol (commencés en 6e).
+**[2026-2027].** Classe de 3e, avec anglais et espagnol (commencés en 6e).
+**[2026-2027].** Intégration du programme Dual School Diploma (100% en anglais).
 
 ### Projets
 **[2026-2027] Données et algorithmes en Python.** Dans le cadre d’un atelier périscolaire.  
@@ -31,8 +32,9 @@ Passionné de jeux vidéo et de nouvelles technologies depuis l’enfance, je so
     - Valorant
     - FragPunk
     - CyberPunk 2077
-    - Eldering
-- **Breakdance.** En club, depuis 2020  
+    - EldenRing
+- **Breakdance.** En club, depuis 2020
+- **Boxe française.** Depuis la rentrée 2026
 - **Prévention et secours civiques** de niveau 1 (PSC1)
 
 *Casier judiciaire vierge*  ***:)***
